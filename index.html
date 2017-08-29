@@ -1,0 +1,178 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<style>
+* {
+	box-sizing: border-box;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 14px
+}
+
+h1 {
+	font-weight: 300;
+}
+h3 {
+	margin-top: 40px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+.header {
+	position: sticky;
+	background-color: white;
+	top: 0px;
+
+	margin: 40px 0 40px;
+}
+
+.section {
+	padding-top: 15px;
+	display: grid;
+	grid-gap: 50px;
+	grid-template: 1fr / 3fr 1fr;
+}
+.left {
+
+}
+.right {
+
+}
+
+.second-page {
+	display: none;
+}
+
+@media print {
+	@page { margin: 0; }
+	body { margin: 0  1.6cm; }
+	.header {
+		position: relative;
+	}
+	.second-page {
+		display: grid;
+	}
+}
+
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="header section">
+		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
+		<span class="right">
+			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 street, Edmonton, AB, T6A 2L4<br>
+			<i class="ion-ios-email-outline"></i>&nbsp;liebrech@ualberta.ca<br>
+			<i class="ion-ios-telephone-outline"></i>&nbsp;(587)985-1922
+		</span>
+	</div>
+	
+	
+	<h3>Education</h3>
+	<div class="section">
+		<span class="left">
+			University of Alberta - Bachelor of Science in Software Engineering Co-op
+			<ul>
+				<li>Cumulative Grade Point Average, <code>3.67</code>/4.00</li>
+			</ul>
+		</span>
+		<span class="right">2014 - May 2019 </span>
+	</div>
+	
+	<h3>Work Experience</h3>
+	<div class="section">
+		<span class="left">Darkhorse Analytics, Edmonton, AB<br>
+			<i>Fullstack Web Developer</i>
+			<ul>
+				<li>Built three web based data visualization applications used by executives at a fortune 500 company with <code>D3.js</code> and <code>React</code></li>
+				<li>Created a GPU accelerated scatterplot using <code>WebGL</code> that can animate tens of thousands of points <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
+			</ul>
+		</span>
+		<span class="right">January - August 2017</span>
+	</div>
+	<div class="section">
+		<span class="left">Panda Rose, Edmonton, AB<br>
+			<i>iOS Software Developer</i>
+			<ul>
+				<li>PageQlip:  lead development from the ground up of an advanced bookmarking application for both Android and iOS with a single codebase in <code>React&nbsp;Native</code>. Incorporated instant real-time syncing</li>
+				<li>Chatz: secured an iOS instant messaging application by implementing the end-to-end encryption protocol OTR3 in <code>Objective-C</code></li>
+			</ul>
+		</span>
+		<span class="right">May - August 2016</span>
+	</div>
+	<div class="section">
+		<span class="left">CSCN Schoolboard, Edmonton, AB<br>
+			<i>Information Technologist</i>
+			<ul>
+				<li>Saved tens of thousands of dollars by customizing the Linux kernel in order to run ChromeOS on more than a hundred laptops that were going to be thrown out due to bad performance</li>
+			</ul>
+		</span>
+		<span class="right">June - August 2014</span>
+	</div>
+	<div class="section">
+		<span class="left">Web Development Freelancing<br>
+			<i>Team Lead</i>
+			<ul>
+				<li>Created the entire design and helped develop with <code>PHP</code> <a href="https://investleduc.com">investleduc.com</a> </li>
+			</ul>
+		</span>
+		<span class="right">Summer 2012 - 2014</span>
+	</div>
+	
+
+	<div class="header section second-page" style="page-break-before:always;">
+		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
+		<span class="right">
+			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 street, Edmonton, AB, T6A 2L4<br>
+			<i class="ion-ios-email-outline"></i>&nbsp;liebrech@ualberta.ca<br>
+			<i class="ion-ios-telephone-outline"></i>&nbsp;(587)985-1922
+		</span>
+	</div>
+	
+	<h3 >Projects</h3>
+	<div class="section">
+		<span class="left">ARVP - Autonomous Robotic Vehicle Project - <i><a href="https://arvp.org">arvp.org</a></i><br>
+			<i>A fully autonomous submarine for the RoboSub competition</i>
+			<ul>
+				<li>Lead of the software control team: currently modelling the robot's dynamics and developing a Linear Quadratic Regulator (LQR) for precision control</li>
+				<li><b>Ranked 9th out of 43 teams in 2017</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	<div class="section">
+		<span class="left">Third Sense - <i><a href="https://devpost.com/software/third-sense">devpost.com/software/third-sense</a></i><br>
+			<i>A haptic feedback vest that simulates touch interaction in VR</i>
+			<ul>
+				<li>Built low level Arduino glue in <code>C++</code> and interfaced with a game engine in <code>C#</code></li>
+				<li><b>Won against 300+ competing projects at Hack the North 2016</b></li>
+				<li><b>Won the Facebook/Oculus API prize</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	<div class="section">
+		<span class="left">Copy Everything - <i><a href="https://github.com/CopyEverything/">github.com/CopyEverything</a></i><br>
+			<i>An app that instantly synchronizes your clipboard accross all major platforms</i>
+			<ul>
+				<li>Developed website frontend and the entire backend including the authentication and database functionality</li>
+				<li><b>Placed 3rd in HackED 2016</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>
