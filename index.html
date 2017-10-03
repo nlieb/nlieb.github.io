@@ -9,15 +9,12 @@
 	box-sizing: border-box;
 	font-family: Lato;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 13.5px;
 	-webkit-print-color-adjust: exact;
 }
 
 h1 {
 	font-weight: 300;
-}
-h3 {
-	margin-top: 40px;
 }
 
 .container {
@@ -29,20 +26,22 @@ h3 {
 	background-color: white;
 	top: 0px;
 
-	margin: 40px 0 40px;
+	margin: 20px 0 20px;
 }
 
+.section-heading {
+	font-weight: 900;
+}
 .section {
-	padding-top: 15px;
+	padding-top: 0px;
 	display: grid;
-	grid-gap: 50px;
-	grid-template: 1fr / 3fr 1fr;
+	grid-gap: 30px;
+	grid-template: 1fr / 4fr 1fr;
 }
 .left {
 
 }
 .right {
-
 }
 
 .second-page {
@@ -51,7 +50,7 @@ h3 {
 
 @media print {
 	@page { margin: 0; }
-	body { margin: 0  1.6cm; }
+	body { margin: 0cm  0.5cm; }
 	.header {
 		position: relative;
 	}
@@ -77,24 +76,24 @@ h3 {
 	</div>
 	
 	
-	<h3>Education</h3>
+	<span class="section-heading">Education</span>
 	<div class="section">
 		<span class="left">
 			University of Alberta - Bachelor of Science in Software Engineering Co-op
 			<ul>
-				<li>Cumulative Grade Point Average, <code>3.67</code>/4.00</li>
+				<li>Cumulative Grade Point Average, <code>3.69</code>/4.00</li>
 			</ul>
 		</span>
 		<span class="right">2014 - May 2019 </span>
 	</div>
 	
-	<h3>Work Experience</h3>
+	<span class="section-heading">Work Experience</span>
 	<div class="section">
 		<span class="left">Darkhorse Analytics, Edmonton, AB<br>
 			<i>Fullstack Web Developer</i>
 			<ul>
-				<li>Built three web based data visualization applications used by executives at a fortune 500 company with <code>D3.js</code> and <code>React</code></li>
-				<li>Created a GPU-accelerated scatterplot using <code>WebGL</code> that can animate tens of thousands of points <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
+				<li>Built and deployed three data visualization applications <b>central to the marketing strategy of a fortune 50 company</b> with <code>D3.js</code> and <code>React</code></li>
+				<li>Created a GPU-accelerated scatterplot using <code>WebGL</code> that can <b>animate 10,000+ points</b> <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
 			</ul>
 		</span>
 		<span class="right">January - August 2017</span>
@@ -103,8 +102,8 @@ h3 {
 		<span class="left">Panda Rose, Edmonton, AB<br>
 			<i>iOS Software Developer</i>
 			<ul>
-				<li>Lead the ground-up build of PageQlip, an advanced bookmarking application for both Android and iOS with real-time distributed bookmark sync. Built in a single codebase with <code>React&nbsp;Native</code></li>
-				<li>Implementing the end-to-end encryption protocol OTR3 in <code>Objective-C</code> for the Chatz iOS instant messenger</li>
+				<li>Lead the ground-up build of PageQlip on Android and iOS with real-time distributed bookmark sync in a single codebase with <code>React&nbsp;Native</code></li>
+				<li>Secured chats with OTR3 end-to-end encryption using <code>Objective-C</code> for the Chatz iOS instant messenger</li>
 			</ul>
 		</span>
 		<span class="right">May - August 2016</span>
@@ -118,33 +117,24 @@ h3 {
 		</span>
 		<span class="right">June - August 2014</span>
 	</div>
-	<div class="section">
-		<span class="left">Web Development Freelancing<br>
-			<i>Team Lead</i>
-			<ul>
-				<li>Created the entire design and helped develop with <code>PHP</code> the investing platform <a href="https://investleduc.com">investleduc.com</a> </li>
-			</ul>
-		</span>
-		<span class="right">Summer 2012 - 2014</span>
-	</div>
 	
 
-	<div class="header section second-page" style="page-break-before:always;">
+	<!--<div class="header section second-page" style="page-break-before:always;">
 		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
 		<span class="right">
 			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 street, Edmonton, AB, T6A 2L4<br>
 			<i class="ion-ios-email-outline"></i>&nbsp;liebrech@ualberta.ca<br>
 			<i class="ion-ios-telephone-outline"></i>&nbsp;(587)985-1922
 		</span>
-	</div>
+	</div> !-->
 	
-	<h3 >Projects</h3>
+	<span class="section-heading">Projects</span>
 	<div class="section">
 		<span class="left">ARVP - Autonomous Robotic Vehicle Project - <i><a href="https://arvp.org">arvp.org</a></i><br>
 			<i>A fully autonomous submarine for the RoboSub competition</i>
 			<ul>
-				<li>Lead of the software control team: currently modelling the robot's dynamics and developing a Linear Quadratic Regulator (LQR) for precision control using <code>Matlab</code>, <code>C++</code>, and <code>ROS</code></li>
-				<li><b>Ranked 9th out of 43 teams in 2017</b></li>
+				<li>Lead of the software control team developing a Linear Quadratic Regulator for precision control using <code>Matlab</code>, <code>C++</code>, and <code>ROS</code></li>
+				<li><b>Ranked 9th out of 43 teams in RoboSub 2017</b></li>
 			</ul>
 		</span>
 		<span class="right"></span>
@@ -164,26 +154,23 @@ h3 {
 		<span class="left">Copy Everything - <i><a href="https://github.com/CopyEverything/">github.com/CopyEverything</a></i><br>
 			<i>An app that instantly synchronizes your clipboard accross all major platforms</i>
 			<ul>
-				<li>Developed website frontend and the entire backend including the authentication plus database functionality using <code>Firebase</code></li>
+				<li>Created the authentication and storage backend using <code>Firebase</code></li>
 				<li><b>Placed 3rd in HackED 2016</b></li>
 			</ul>
 		</span>
 		<span class="right"></span>
 	</div>
 	
-	<h3 >Other</h3>
+	<span class="section-heading">Other</span>
 	<div class="section">
 		<span class="left">
 			<ul>
-				<li>Software developer in three-time provincial championship winner highschool FTC robotics team from 2011-2014</li>
+				<li>Software developer in three-time provincial championship winner highschool FTC robotics team</li>
 				<li>Fluent in French</li>
 			</ul>
 		</span>
 		<span class="right"></span>
 	</div>
-	
-	<br>
-	<span style="font-weight: 900">References available upon request</span>
 	
 </div>
 
