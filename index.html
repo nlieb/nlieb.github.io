@@ -19,7 +19,7 @@ h1 {
 
 .container {
 	margin: 0 auto;
-	width: 960px;
+	width: 800px;
 }
 .header {
 	position: sticky;
@@ -42,6 +42,13 @@ h1 {
 
 }
 .right {
+}
+
+.date {
+	font-weight: 700;
+}
+i {
+	font-weight: 500;
 }
 
 .second-page {
@@ -69,9 +76,9 @@ h1 {
 	<div class="header section">
 		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
 		<span class="right">
-			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 Street, Edmonton, AB, T6A 2L4<br>
 			<i class="ion-ios-email-outline"></i>&nbsp;liebrech@ualberta.ca<br>
-			<i class="ion-ios-telephone-outline"></i>&nbsp;(587) 985-1922
+			<i class="ion-ios-telephone-outline"></i>&nbsp;+1 (587) 985-1922<br>
+			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 Street Edmonton&nbsp;&nbsp;AB&nbsp;&nbsp;T6A 2L4
 		</span>
 	</div>
 	
@@ -79,43 +86,49 @@ h1 {
 	<span class="section-heading">Education</span>
 	<div class="section">
 		<span class="left">
-			University of Alberta - Bachelor of Science in Software Engineering Co-op
+			BSc Computer Engineering Co-op - University of Alberta&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
 			<ul>
-				<li>Cumulative Grade Point Average, <code>3.69</code>/4.00</li>
+				<li>Cumulative GPA, <b>3.7</b>/4.0</li>
 			</ul>
 		</span>
-		<span class="right">2014 - May 2019 </span>
+		<span class="right date">Graduating May 2019 </span>
 	</div>
 	
 	<span class="section-heading">Work Experience</span>
 	<div class="section">
-		<span class="left">Darkhorse Analytics, Edmonton, AB<br>
-			<i>Fullstack Web Developer</i>
+		<span class="left"><b>Full Stack Web Developer, Darkhorse Analytics</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
 			<ul>
-				<li>Built and deployed three data visualization applications <b>central to the marketing strategy of a fortune 50 company</b> with <code>D3.js</code> and <code>React</code></li>
-				<li><b>Improved speed by 100x</b> for an animated scatterplot using novel <code>WebGL</code> rendering techniques <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
+				<li>Built and deployed three data visualization applications central to the marketing strategy of a fortune 50 company with <code>D3.js</code> and <code>React</code></li>
+				<li>Improved speed by 100x for an animated scatterplot with force directed grouping using novel <code>WebGL</code> rendering techniques <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
 			</ul>
 		</span>
-		<span class="right">January - August 2017</span>
+		<span class="right date">January–August 2017</span>
 	</div>
 	<div class="section">
-		<span class="left">Panda Rose, Edmonton, AB<br>
-			<i>iOS Software Developer</i>
+		<span class="left"><b>iOS Software Developer, Panda Rose</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
 			<ul>
 				<li>Lead the ground-up build of PageQlip on Android and iOS with real-time distributed bookmark sync in a single codebase with <code>React&nbsp;Native</code></li>
 				<li>Secured chats with OTR3 end-to-end encryption using <code>Objective-C</code> for the Chatz iOS instant messenger</li>
 			</ul>
 		</span>
-		<span class="right">May - August 2016</span>
+		<span class="right date">May–August 2016</span>
 	</div>
 	<div class="section">
-		<span class="left">CSCN Schoolboard, Edmonton, AB<br>
-			<i>Information Technologist</i>
+		<span class="left"><b>Information Technologist, CSCN Schoolboard</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
+			
 			<ul>
-				<li>Saved potentially tens of thousands of dollars by customizing the Linux kernel in order to run ChromeOS on more than a hundred laptops that were going to be thrown out due to bad performance</li>
+				<li>Saved potentially $10k+ by customizing the Linux kernel in order to run ChromeOS on more than 100 laptops that were going to be thrown out due to bad performance</li>
 			</ul>
 		</span>
-		<span class="right">June - August 2014</span>
+		<span class="right date">June–August 2014</span>
+	</div>
+	
+	<span class="section-heading">Languages and Technologies</span>
+	<div>
+		Languages: <code>C++</code> <code>C</code> <code>Objective-C</code> <code>Python</code> <code>Java</code> <code>Javascript</code> <code>PHP</code> 
+			<code>HTML</code> <code>CSS</code> <code>SCSS/SASS</code> <code>SQL</code> <code>MATLAB</code> <br>
+		Technologies: <code>ROS</code> <code>Node.js</code> <code>React</code> <code>React Native</code> <code>D3.js</code> <code>NoSQL</code> <code>CouchDB</code> 
+			<code>Android</code> <code>CocoaTouch</code>  <code>Git</code><br><br>
 	</div>
 	
 
@@ -130,30 +143,31 @@ h1 {
 	
 	<span class="section-heading">Projects</span>
 	<div class="section">
-		<span class="left">ARVP - Autonomous Robotic Vehicle Project - <i><a href="https://arvp.org">arvp.org</a></i><br>
-			<i>A fully autonomous submarine for the RoboSub competition</i>
+		<span class="left"><b>Autonomous Robotic Vehicle Project (ARVP)</b> - <i><a href="https://arvp.org">arvp.org</a></i><br>
 			<ul>
-				<li>Lead of the software control team developing a Linear Quadratic Regulator for precision control using <code>Matlab</code>, <code>C++</code>, and <code>ROS</code></li>
-				<li><b>Ranked 9th out of 43 teams in RoboSub 2017</b></li>
+				<li>Fully autonomous submarine for RoboSub competition</li>
+				<li>Developed automation tools for deep learning-data collection with a simulator</li>
+				<li>Lead of the Software Control Team developing a Linear Quadratic Regulator for precision control using <code>MATLAB</code>, <code>C++</code>, and <code>ROS</code></li>
+				<li><b>Ranked 10th out of 43 teams in RoboSub 2017</b></li>
 			</ul>
 		</span>
 		<span class="right"></span>
 	</div>
 	<div class="section">
-		<span class="left">Third Sense - <i><a href="https://devpost.com/software/third-sense">devpost.com/software/third-sense</a></i><br>
-			<i>A haptic feedback vest that simulates touch interaction in VR</i>
+		<span class="left"><b>Third Sense</b> - <i><a href="https://devpost.com/software/third-sense">devpost.com/software/third-sense</a></i><br>
 			<ul>
+				<li>Haptic feedback vest that simulates touch interaction in VR</li>
 				<li>Built low-level Arduino glue in <code>C++</code> and interfaced with a game engine in <code>C#</code></li>
 				<li><b>Won against 300+ competing projects at Hack the North 2016</b></li>
-				<li><b>Won the Facebook/Oculus API prize</b></li>
+				<li><b>Won Facebook/Oculus API prize</b></li>
 			</ul>
 		</span>
 		<span class="right"></span>
 	</div>
 	<div class="section">
-		<span class="left">Copy Everything - <i><a href="https://github.com/CopyEverything/">github.com/CopyEverything</a></i><br>
-			<i>An app that instantly synchronizes your clipboard accross all major platforms</i>
+		<span class="left"><b>Copy Everything</b> - <i><a href="https://github.com/CopyEverything/">github.com/CopyEverything</a></i><br>
 			<ul>
+				<li>Instantly synchronize your clipboard accross iOS, Android, Windows and Linux</li>
 				<li>Created the authentication and storage backend using <code>Firebase</code></li>
 				<li><b>Placed 3rd in HackED 2016</b></li>
 			</ul>
@@ -165,8 +179,7 @@ h1 {
 	<div class="section">
 		<span class="left">
 			<ul>
-				<li>Software developer in three-time provincial championship winner highschool FTC robotics team</li>
-				<li>Fluent in French</li>
+				<li>Software developer in three-time international championship winning highschool FIRST Tech Challenge (FTC) robotics team (2011-2014)</li>
 			</ul>
 		</span>
 		<span class="right"></span>
