@@ -1,20 +1,26 @@
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	
+
 	<style>
 * {
 	box-sizing: border-box;
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 13.5px;
+	font-family: Roboto;
+	font-weight: 400;
+	color: #6a6a6a;
+	font-size: 12px;
 	-webkit-print-color-adjust: exact;
 }
 
-h1 {
+body > div > div.header.section > span.left > code {
 	font-weight: 300;
+	background-color: transparent !important;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 .container {
@@ -26,17 +32,34 @@ h1 {
 	background-color: white;
 	top: 0px;
 
-	margin: 20px 0 20px;
+	margin: 20px 0 10px;
+}
+.header .right {
+	margin-top: 2px;
+}
+
+b, .date {
+	font-weight: 700;
+ 	color: #6a6a6a;
 }
 
 .section-heading {
 	font-weight: 900;
+ 	color: #444;
 }
 .section {
 	padding-top: 0px;
 	display: grid;
-	grid-gap: 30px;
+	grid-gap: 40px;
 	grid-template: 1fr / 4fr 1fr;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+.major-section {
+	margin-top:24px;
 }
 .left {
 
@@ -44,9 +67,6 @@ h1 {
 .right {
 }
 
-.date {
-	font-weight: 700;
-}
 i {
 	font-weight: 500;
 }
@@ -76,61 +96,184 @@ i {
 	<div class="header section">
 		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
 		<span class="right">
-			<i class="ion-ios-email-outline"></i>&nbsp;liebrech@ualberta.ca<br>
-			<i class="ion-ios-telephone-outline"></i>&nbsp;+1 (587) 985-1922<br>
-			<i class="ion-ios-location-outline"></i>&nbsp;10679 61 Street Edmonton&nbsp;&nbsp;AB&nbsp;&nbsp;T6A 2L4
+			<i class="ion-ios-email"></i>&nbsp;<a href="mailto:liebrech@ualberta.ca">liebrech@ualberta.ca</a><br>
+			<i class="ion-social-github"></i>&nbsp;<a href="https://github.com/nwlieb">github.com/nwlieb</a><br>
+			<i class="ion-social-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/nathan-liebrecht-733607b6/">linkedin.com/in/nwlieb</a>
 		</span>
 	</div>
-	
-	
+
+
 	<span class="section-heading">Education</span>
 	<div class="section">
 		<span class="left">
-			BSc Computer Engineering Co-op - University of Alberta&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
+			BSc Computer Engineering - University of Alberta
+			<span class="right date" style="float:right">Class of May 2019 </span>
+			<!-- &nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB !-->
+			<br>
 			<ul>
 				<li>Cumulative GPA, <b>3.7</b>/4.0</li>
 			</ul>
 		</span>
-		<span class="right date">Graduating May 2019 </span>
+
 	</div>
-	
-	<span class="section-heading">Work Experience</span>
+
+
+	<div class="major-section">
+	<span class="section-heading">Employment</span>
 	<div class="section">
-		<span class="left"><b>Full Stack Web Developer, Darkhorse Analytics</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
+		<span class="left"><b>Full Stack Developer, Darkhorse Analytics</b>
+			<span class="right date" style="float:right">January–August 2017</span>
+			<br>
 			<ul>
-				<li>Built and deployed three data visualization applications central to the marketing strategy of a fortune 50 company with <code>D3.js</code> and <code>React</code></li>
-				<li>Improved speed by 100x for an animated scatterplot with force directed grouping using novel <code>WebGL</code> rendering techniques <a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></li>
+				<li>
+					Built and deployed the entirety of three data visualization
+					applications for the firm's largest client using
+					<code>D3.js</code> and <code>React</code>
+				</li>
+				<li>Visualization features include 5k+ richly animated particle layouts,
+					scalable mapping with 10k+ features using
+					<code>Mapbox GL JS</code>, <code>Pixi.js</code>, and <code>ReGL</code>,
+					and highly dimentional data analysis tools.
+				</li>
+				<li>
+					Lead an internal code maintainability initiative by moving current and
+					legacy applications to <code>Webpack</code> and using modern <code>ES6</code>
+					<code>JavaScript</code> with <code>Flowtype</code> static type checking
+				</li>
 			</ul>
 		</span>
-		<span class="right date">January–August 2017</span>
 	</div>
 	<div class="section">
-		<span class="left"><b>iOS Software Developer, Panda Rose</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
+		<span class="left"><b>iOS Software Developer, Panda Rose</b>
+			<span class="right date" style="float: right">May–August 2016</span>
+			<br>
 			<ul>
-				<li>Lead the ground-up build of PageQlip on Android and iOS with real-time distributed bookmark sync in a single codebase with <code>React&nbsp;Native</code></li>
-				<li>Secured chats with OTR3 end-to-end encryption using <code>Objective-C</code> for the Chatz iOS instant messenger</li>
+				<li>
+					Lead the ground-up build of PageQlip, a real-time multi-master
+					distributed bookmark synchronization application using <code>CouchDB</code>
+				</li>
+				<li>
+					Deployed PageQlip on Android and iOS with 95% code reuse using
+					 <code>React&nbsp;Native</code> thereby improving productivity 2x
+				 </li>
+				<li>
+					Implemented the full OTR3 end-to-end encryption protocol using
+					<code>Objective-C</code> and <code>OpenSSL</code> to secure
+					conversations in Chatz, an iOS instant messenger
+				</li>
 			</ul>
 		</span>
-		<span class="right date">May–August 2016</span>
+
 	</div>
-	<div class="section">
-		<span class="left"><b>Information Technologist, CSCN Schoolboard</b>&nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB<br>
-			
+</div>
+	<!-- <div class="section">
+		<span class="left"><b>Information Technologist, CSCN Schoolboard</b>
+		<br>
 			<ul>
-				<li>Saved potentially $10k+ by customizing the Linux kernel in order to run ChromeOS on more than 100 laptops that were going to be thrown out due to bad performance</li>
+				<li>Saved potentially $10k+ by customizing the Linux kernel in order to
+				 run ChromeOS on more than 100 laptops that were going to be thrown out
+				 due to bad performance
+			 </li>
 			</ul>
 		</span>
 		<span class="right date">June–August 2014</span>
+	</div> !-->
+
+	<div class="major-section">
+	<span class="section-heading">Projects</span>
+	<div class="section">
+		<span class="left"><b>Autonomous Robotic Vehicle Project</b> -
+			<i><a href="https://arvp.org">arvp.org</a></i><br>
+			<ul>
+				<li>
+					Lead of the software control team for an autonomous submarine group
+					competing at RoboSub
+				</li>
+				<li>
+					Pioneered pull request/code review culture, continuous integration,
+					and testing for the entire 30 member software team using
+					 <code>Docker</code> and <code>Travis-CI</code>, greatly improving
+					 team productivity
+				 </li>
+				<li>
+					Developing a linear quadratic regulator for precision control using
+					 <code>MATLAB</code>, <code>C++</code>, and <code>ROS</code>
+				 </li>
+				<li><b>Ranked 10th out of 43 teams in RoboSub 2017</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
 	</div>
-	
+	<div class="section">
+		<span class="left"><b>React Scatterplot</b> -
+			<i><a href="https://nwlieb.github.io/react-scatterplot/">nwlieb.github.io/react-scatterplot</a></i><br>
+			<ul>
+				<li>
+					Improved performance 100x over competing animated scatterplots using
+					novel <code>WebGL</code> rendering techniques allowing 15k+ points to smoothly animate
+				</li>
+				<li>
+					High performance point clustering using an n-body force simulation
+					and quadtrees
+				</li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	<div class="section">
+		<span class="left"><b>Roomie</b> -
+			<i><a href="https://devpost.com/software/roomie-oglidp">devpost.com/software/roomie-oglidp</a></i><br>
+			<ul>
+				<li>Developed a simmulated annealing approach to interior design optimization</li>
+				<li><b>Won 1st place at HackED 2017</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	<div class="section">
+		<span class="left"><b>Third Sense</b> -
+			<i><a href="https://devpost.com/software/third-sense">devpost.com/software/third-sense</a></i><br>
+			<ul>
+				<li>Haptic feedback vest that simulates touch interaction in VR</li>
+				<li>
+					Built low-level embedded <code>C++</code> drivers and a plugin to
+					talk to the Unity game engine in <code>C#</code>
+				</li>
+				<li><b>Won against 300+ competing projects at Hack the North 2016</b></li>
+				<li><b>Won Facebook/Oculus API prize</b></li>
+			</ul>
+		</span>
+		<span class="right"></span>
+	</div>
+	</div>
+
+	<div class="major-section">
 	<span class="section-heading">Languages and Technologies</span>
-	<div>
-		Languages: <code>C++</code> <code>C</code> <code>Objective-C</code> <code>Python</code> <code>Java</code> <code>Javascript</code> <code>PHP</code> 
-			<code>HTML</code> <code>CSS</code> <code>SCSS/SASS</code> <code>SQL</code> <code>MATLAB</code> <br>
-		Technologies: <code>ROS</code> <code>Node.js</code> <code>React</code> <code>React Native</code> <code>D3.js</code> <code>NoSQL</code> <code>CouchDB</code> 
-			<code>Android</code> <code>CocoaTouch</code>  <code>Git</code><br><br>
+	<div class="section">
+	<div class="left">
+		<ul>
+		<li>
+			Advanced proficiency in
+			<code>C++</code> <code>Python</code> <code>JavaScript</code>
+		</li>
+		<li>
+			Experience with
+			<code>Objective-C</code> <code>Java</code>
+			<code>SQL</code> <code>MATLAB</code> <code>PHP</code>
+			<code>HTML</code> <code>CSS</code> <code>SCSS/SASS</code>
+		</li>
+		<li>
+			Technologies:
+			<code>ROS</code> <code>Docker</code> <code>Travis-CI</code>
+			<code>Node.js</code> <code>ReactJS</code> <code>React Native</code>
+			<code>D3.js</code> <code>NoSQL</code> <code>CouchDB</code>
+			<code>Android</code> <code>CocoaTouch</code> <code>Git</code>
+		</li>
+		</ul>
 	</div>
-	
+	</div>
+	</div>
+
 
 	<!--<div class="header section second-page" style="page-break-before:always;">
 		<span class="left"><code><h1>Nathan Liebrecht</h1></code></span>
@@ -140,51 +283,26 @@ i {
 			<i class="ion-ios-telephone-outline"></i>&nbsp;(587)985-1922
 		</span>
 	</div> !-->
-	
-	<span class="section-heading">Projects</span>
-	<div class="section">
-		<span class="left"><b>Autonomous Robotic Vehicle Project (ARVP)</b> - <i><a href="https://arvp.org">arvp.org</a></i><br>
-			<ul>
-				<li>Fully autonomous submarine for RoboSub competition</li>
-				<li>Developed automation tools for deep learning-data collection with a simulator</li>
-				<li>Lead of the Software Control Team developing a Linear Quadratic Regulator for precision control using <code>MATLAB</code>, <code>C++</code>, and <code>ROS</code></li>
-				<li><b>Ranked 10th out of 43 teams in RoboSub 2017</b></li>
-			</ul>
-		</span>
-		<span class="right"></span>
-	</div>
-	<div class="section">
-		<span class="left"><b>Third Sense</b> - <i><a href="https://devpost.com/software/third-sense">devpost.com/software/third-sense</a></i><br>
-			<ul>
-				<li>Haptic feedback vest that simulates touch interaction in VR</li>
-				<li>Built low-level Arduino glue in <code>C++</code> and interfaced with a game engine in <code>C#</code></li>
-				<li><b>Won against 300+ competing projects at Hack the North 2016</b></li>
-				<li><b>Won Facebook/Oculus API prize</b></li>
-			</ul>
-		</span>
-		<span class="right"></span>
-	</div>
-	<div class="section">
-		<span class="left"><b>Copy Everything</b> - <i><a href="https://github.com/CopyEverything/">github.com/CopyEverything</a></i><br>
-			<ul>
-				<li>Instantly synchronize your clipboard accross iOS, Android, Windows and Linux</li>
-				<li>Created the authentication and storage backend using <code>Firebase</code></li>
-				<li><b>Placed 3rd in HackED 2016</b></li>
-			</ul>
-		</span>
-		<span class="right"></span>
-	</div>
-	
-	<span class="section-heading">Other</span>
+
+	<div class="major-section">
+	<span class="section-heading">Complementary Interests</span>
 	<div class="section">
 		<span class="left">
 			<ul>
-				<li>Software developer in three-time international championship winning highschool FIRST Tech Challenge (FTC) robotics team (2011-2014)</li>
+				<li>
+					Software developer in three-time international championship winning
+					highschool FIRST Tech Challenge (FTC) robotics team (2011–2014)
+				</li>
+				<li>
+					Yearly volunteer and mentor at the local FTC provincial competition
+					(2014–current)
+				</li>
 			</ul>
 		</span>
 		<span class="right"></span>
 	</div>
-	
+	</div>
+
 </div>
 
 
