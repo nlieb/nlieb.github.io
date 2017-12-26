@@ -1,5 +1,28 @@
 <html>
 <head>
+	<!--
+	<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('root')
+      );
+
+    </script>
+	</body>
+</html>
+	!-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -42,7 +65,7 @@
 	font-family: "adobe-garamond-pro";
 	font-weight: 400;
 	color: #000;
-	font-size: 11.5pt;
+	font-size: 11pt;
 	-webkit-print-color-adjust: exact;
 }
 body {
@@ -56,8 +79,7 @@ body > div > div.header.section > span.left code {
 }
 
 h1 {
-	font-size: 2em;
-	margin-top: 0.35em;
+	font-size: 3em;
 	/*line-height: 1;*/
 }
 
@@ -67,11 +89,11 @@ h1 {
 	margin-bottom: 40px
 }
 .header {
-	position: sticky;
+	/*position: sticky;*/
 	background-color: white;
 	top: 0px;
 
-	margin: 15px 0 0px;
+	margin: 15px 0 30px;
 }
 .header .right {
 	margin-top: 2px;
@@ -127,13 +149,16 @@ ul {
 }
 
 .major-section {
-	margin-top:1.5em;
+	margin-top:1em;
 }
 ul {
-	padding-left: 15px;
+	padding-left: 0;
+	list-style-type: none;
 }
 ul ul {
-	padding-left: 30px;
+	padding-left: 20px;
+	list-style-type: circle;
+	margin-bottom: 11pt/*16.875pt*/;
 }
 
 .left {
@@ -152,7 +177,7 @@ i {
 
 @media print {
 	@page { margin: 0; }
-	body { margin: 0cm  0.5cm; }
+	body { margin: 0cm  1.27cm; }
 	.header {
 		position: relative;
 	}
@@ -181,11 +206,11 @@ i {
 			<!-- <code class="code-comment" style="color: #364d1d !important">//&nbsp;Software&nbsp;Developer</code> !-->
 		</span>
 		<span class="right" style="float:right;">
+			<i class="ion-ios-email"></i>&nbsp;<a href="mailto:liebrech@ualberta.ca">liebrech@ualberta.ca</a><br>
 			<i class="ion-ios-telephone"></i>&nbsp;<a href="tel:+15879851922">+1 (587)985-1922</a><br>
-			<i class="ion-android-pin"></i>&nbsp;<a href="#">Edmonton, Alberta</a><br>
+			<!--<i class="ion-android-pin"></i>&nbsp;<a href="#">Edmonton, Alberta</a><br>-->
 		</span>
 		<span class="right" style="float:right;margin-right:20px;">
-			<i class="ion-ios-email"></i>&nbsp;<a href="mailto:liebrech@ualberta.ca">liebrech@ualberta.ca</a><br>
 			<i class="ion-social-github"></i>&nbsp;<a href="https://github.com/nwlieb">github.com/nwlieb</a><br>
 			<i class="ion-social-linkedin"></i>&nbsp;<a href="https://linkedin.com/in/nwlieb">linkedin.com/in/nwlieb</a>
 		</span>
@@ -197,13 +222,15 @@ i {
 	<hr class=section-line>
 	<div class="section">
 		<span class="left">
-			BSc Computer Engineering, University of Alberta
-			<span class="right date" style="float:right">Class of May 2019 </span>
-			<!-- &nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB !-->
-			<br>
-			<ul>
-				<li>Cumulative GPA: <b>3.7/4.0</b></li>
-			</ul>
+			<ul><li>
+				BSc Computer Engineering, University of Alberta
+				<span class="right date" style="float:right">Class of May 2019 </span>
+				<!-- &nbsp;&nbsp;&nbsp;<i class="ion-ios-location-outline"></i> Edmonton, AB !-->
+				<br>
+				<ul>
+					<li>Cumulative GPA: <b>3.7/4.0</b></li>
+				</ul>
+			</li></ul>
 		</span>
 
 	</div>
@@ -277,7 +304,7 @@ i {
 	<hr class=section-line>
 	<ul>
 	<li>
-		<span class="left"><b>Autonomous Robotic Vehicle Project</b> | <i>Autonomous submarine group competing at RoboSub</i>
+		<span class="left"><b>Autonomous Submarine Club</b> | <i>Robotics club competing at RoboSub</i>
 			<span class="right date" style="float: right">September 2016 – present</span>
 			<ul>
 				<li>
@@ -288,8 +315,8 @@ i {
 				 </li>
 				<li>
 					Developing linear quadratic regulator for multi-axis rotation and
-					precise positioning of robot with <code>MATLAB</code>,
-					<code>C++</code>, <code>ROS</code>
+					precise positioning of robot using <code>MATLAB</code>,
+					<code>C++</code>, and <code>ROS</code>
 				 </li>
 				<li>Ranked 10th out of 43 teams at RoboSub 2017, San Diego</li>
 			</ul>
@@ -297,7 +324,7 @@ i {
 		<span class="right"></span>
 	</li>
 	<li>
-		<span class="left"><b>React Scatterplot</b> | <i>Intuitive, customizable data visualization with 10k+ data points</i>
+		<span class="left"><b>React Scatterplot</b> | <i>Data visualization with 10k+ data points</i>
 			<span class="right date" style="float: right">August 2017 – present</span>
 			<ul>
 				<li>
@@ -311,7 +338,7 @@ i {
 		</span>
 	</li>
 	<li>
-		<span class="left"><b>Roomie</b> | <i>Automatic interior design</i>
+		<span class="left"><b>Roomie</b> | <i>Automated interior design</i>
 			<span class="right date" style="float: right">January 2017</span>
 			<ul>
 				<li>Developed a Simulated Annealing approach to interior design optimization</li>
@@ -371,11 +398,11 @@ i {
 	<hr class=section-line>
 	<ul>
 	<li>
-		Annual volunteer and mentor at local FIRST Tech Challenge (FTC) provincial robotics competition
+		Annual volunteer and mentor at local FIRST Tech Challenge (FTC) robotics competition
 		(2014–present)
 	</li>
 		<li>
-			Software developer in three-time international championship winning
+			Software developer in three-time national championship winning
 			high school FTC robotics team (2011–2014)
 		</li>
 	</ul>
