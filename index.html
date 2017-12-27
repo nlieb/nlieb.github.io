@@ -24,7 +24,7 @@
 </html>
 	!-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.typekit.net/qca7ycd.css">
 
@@ -81,6 +81,7 @@ body > div > div.header.section > span.left code {
 
 h1 {
 	font-size: 2.5em;
+	font-weight: 900;
 	/*line-height: 1;*/
 }
 
@@ -94,7 +95,7 @@ h1 {
 	background-color: white;
 	top: 0px;
 
-	margin: 15px 0 20px;
+	margin: 30px 0 30px;
 }
 .header .right {
 	margin-top: 2px;
@@ -136,7 +137,7 @@ code {
 	color: #9e0007 !important;
 	padding: 0;
 	font-family: "adobe-garamond-pro";
-	font-weight: 700;
+	font-weight: 400;
 	background-color: transparent;
 	font-size: 10.5pt;
 }
@@ -153,7 +154,7 @@ code .code-comment {
 	display: inline;
 }
 
-.section-contact i {
+i[class^='ion-'] {
 	display: inline-block;
 	font-family: "Ionicons";
 	speak: none;
@@ -207,6 +208,7 @@ i {
 @media print {
 	@page { margin: 0; }
 	body { margin: 0cm  0.5cm; }
+	a { color: #000 }
 	.header {
 		position: relative;
 	}
@@ -242,19 +244,21 @@ i {
 	<div id=left-col>
 		
 		<span class="section section-contact">
-			<i class="ion-ios-email"></i>&nbsp;<a href="mailto:liebrech@ualberta.ca">liebrech@ualberta.ca</a><br>
-			<i class="ion-ios-telephone"></i>&nbsp;<a href="tel:+15879851922">+1 (587)985-1922</a><br>
+			<i class="ion-ios-mail"></i>&nbsp;<a href="mailto:liebrech@ualberta.ca">liebrech@ualberta.ca</a><br>
+			<i class="ion-ios-call"></i>&nbsp;<a href="tel:+15879851922">+1 (587)985-1922</a><br>
 			<!--<i class="ion-android-pin"></i>&nbsp;<a href="#">Edmonton, Alberta</a><br>-->
-			<i class="ion-social-github"></i>&nbsp;<a href="https://github.com/nwlieb">github.com/nwlieb</a><br>
-			<i class="ion-social-linkedin"></i>&nbsp;<a href="https://linkedin.com/in/nwlieb">linkedin.com/in/nwlieb</a><br>
+			<i class="ion-logo-github"></i>&nbsp;<a href="https://github.com/nwlieb">github.com/nwlieb</a><br>
+			<i class="ion-logo-linkedin"></i>&nbsp;<a href="https://linkedin.com/in/nwlieb">linkedin.com/in/nwlieb</a><br>
 		</span>
 		<br>
-		<span class="section-heading">Education</span>
+
+        <span class="section-heading"><i class="ion-ios-school"></i> Education</span>
 		<hr class=section-line>
 		<div class="section">
 			<span class="left">
 				<ul><li>
 					BSc Computer Engineering<br>
+                    Software Option, Coop<br>
 					University of Alberta<br>
 					Class of May 2019<br>
 					Cumulative GPA: <b>3.7/4.0</b>
@@ -265,7 +269,7 @@ i {
 		
 		<br>
 		<div class="major-section section-skills">
-		<span class="section-heading">Skills</span>
+		<span class="section-heading"><i class="ion-ios-star"></i> Skills</span>
 		<hr class=section-line>
 		<ul>
 		<li>
@@ -292,7 +296,7 @@ i {
 
 	<div id=right-col>
 	<div class="major-section">
-		<span class="section-heading">Employment</span>
+		<span class="section-heading"><i class="ion-ios-briefcase"></i> Employment</span>
 		<hr class=section-line>
 		<ul>
 		<li>
@@ -355,7 +359,7 @@ i {
 	</div> !-->
 
 	<div class="major-section">
-	<span class="section-heading">Projects</span>
+	<span class="section-heading"><i class="ion-ios-construct"></i> Projects</span>
 	<hr class=section-line>
 	<ul>
 	<li>
@@ -430,7 +434,7 @@ i {
 	</div> !-->
 
 	<div class="major-section">
-	<span class="section-heading">Complementary Interests</span>
+	<span class="section-heading"><i class="ion-ios-heart"></i> Complementary Interests</span>
 	<hr class=section-line>
 	<ul>
 	<li>
