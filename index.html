@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Nathan Liebrecht</title>
 
+    <script src="https://unpkg.com/popper.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/qca7ycd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 <body>
 
@@ -26,16 +32,55 @@
 
         You can find my online activities and contact me with the following links:<br><br>
         <i class="ion-ios-list-box"></i>&nbsp;<a href="resume.html">My Resume</a><br>
-        <i class="ion-ios-mail"></i>&nbsp;<a href="mailto:contact@nathanl.io">contact@nathanl.io</a><br>
+        <i class="ion-ios-mail"></i>&nbsp;<a href="mailto:contact@nathanl.io">contact@nathanl.io</a>&nbsp;
+        <button class="btn btn-sm" data-clipboard-text="contact@nathanl.io">
+            Copy to clipboard
+        </button>
+        <br>
         <i class="ion-logo-github"></i>&nbsp;<a href="https://github.com/nwlieb">github.com/nwlieb</a><br>
         <i class="ion-logo-linkedin"></i>&nbsp;<a href="https://linkedin.com/in/nwlieb">linkedin.com/in/nwlieb</a><br>
 
     </div>
 
-
-
 </div>
 
 
+
+<script>
+    $('button').tooltip({
+        trigger: 'click',
+        placement: 'bottom'
+    });
+
+    function setTooltip(btn, message) {
+        try {
+            $(btn).tooltip('hide')
+                .attr('data-original-title', message)
+                .tooltip('show');
+        } catch(e){}
+    }
+
+    function hideTooltip(btn) {
+        setTimeout(function() {
+            try {
+                $(btn).tooltip('hide');
+            } catch(e){}
+        }, 1000);
+    }
+
+    // Clipboard
+
+    var clipboard = new Clipboard('button');
+
+    clipboard.on('success', function(e) {
+        setTooltip(e.trigger, 'Copied!');
+        hideTooltip(e.trigger);
+    });
+
+    clipboard.on('error', function(e) {
+        setTooltip(e.trigger, 'Failed!');
+        hideTooltip(e.trigger);
+    });
+</script>
 </body>
 </html>
