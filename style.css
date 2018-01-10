@@ -52,6 +52,9 @@ b {
     font-weight: 700;
     font-style: normal;
 }
+b.semi {
+    font-weight: 700;
+}
 
 
 .section-heading {
@@ -61,7 +64,7 @@ b {
     text-transform: uppercase;
 }
 .section-heading:first-letter {
-    font-size: 13pt;
+    font-size: 16pt;
     line-height: 0;
 }
 .section {
@@ -140,7 +143,7 @@ i {
     display: grid;
     grid-template-columns: 1fr 3fr;
 
-    grid-column-gap: 30px;
+    grid-column-gap: 0.8cm;
 }
 
 .second-page {
