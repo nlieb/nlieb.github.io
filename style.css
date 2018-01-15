@@ -7,7 +7,7 @@ body {
     -webkit-print-color-adjust: exact;
 }
 body {
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 body > div > div.header.section > span.left code {
@@ -21,7 +21,7 @@ h1 {
     font-weight: 900;
     padding: 0;
     margin: 0;
-    /*line-height: 1;*/
+    line-height: 1.6;
 }
 
 .intro {
@@ -39,7 +39,7 @@ h1 {
     top: 0px;
     line-height: 0;
 
-    margin: 17.325pt 0 34.65pt;
+    margin: 20pt 0;
 }
 .header .right {
     margin-top: 2px;
