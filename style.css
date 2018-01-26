@@ -157,7 +157,16 @@ i {
 }
 
 @media print {
-    @page { margin: 0; }
+    @page {
+        size: auto !important;
+        margin: 0;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: unset;
+        widows: unset;
+    }
     body { margin: 0cm  0.8cm; }
     a { color: #000 }
     .header {
